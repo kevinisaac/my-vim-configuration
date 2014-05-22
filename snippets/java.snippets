@@ -1,0 +1,149 @@
+snippet main
+	public static void main (String [] args)
+	{
+		${1:/* code */}
+	}
+snippet sout
+	System.out.print${1:ln}("${2:Hello World!}");
+	${3}
+snippet pu
+	public
+snippet po
+	protected
+snippet pr
+	private
+snippet st
+	static
+snippet fi
+	final
+snippet ab
+	abstract
+snippet re
+	return
+snippet br
+	break;
+snippet de
+	default:
+		${1}
+snippet tc
+	try {
+		${1}	
+	}
+	catch (${2:Exception e}) {
+		${3:// Catch Block}	
+	}
+	${4}
+snippet ca
+	catch (${1:Exception} ${2:e}) {
+		${3}
+	}
+snippet th
+	throw 
+snippet sy
+	synchronized 
+snippet im
+	import 
+snippet imsc
+	import java.util.Scanner;
+snippet j.u
+	java.util
+snippet j.i
+	java.io.
+snippet j.b
+	java.beans.
+snippet j.n
+	java.net.
+snippet j.m
+	java.math.
+snippet if
+	if (${1}) {
+		${2}
+	}
+
+	${3}
+snippet el
+	else 
+snippet mc
+	public class ${1:`Filename()`}{
+		public static void main(String[] args){
+			${2}
+		}
+	}
+snippet ie
+	if (${1}) {
+		${2}	
+	}
+	else {
+		${3}
+	}
+
+	${4}
+snippet ei
+	else if (${1}) {
+		${2}
+	}
+snippet wh
+	while (${1}){
+		${2}
+	}
+snippet for
+	for (${1:int i=0}; i ${2:< 10}; ${3:i++}) {
+		${4}
+	}
+snippet fore
+	for (${1} : ${2}) ${3}
+snippet sw
+	switch (${1}) {
+		${2}
+	}
+snippet cs
+	case ${1}:
+		${2}
+		break;
+	${3}
+snippet sc
+	Scanner ${1:scan} = new Scanner(System.in);
+	${2}
+snippet tc
+	public class ${1:`Filename()`} extends ${2:TestCase}
+snippet t
+	public void test${1:Name}() throws Exception ${2}
+" snippet cl
+" 	class ${1:`Filename("", "untitled")`} ${2}
+snippet cl
+	class ${1:`Filename()`} {
+		${2}
+	}
+snippet in
+	interface ${1:`Filename()`} ${2:extends Parent}${3} {
+		${4}
+	}
+snippet m
+	${1:void} ${2:method}(${3}) ${4:throws }${5}
+snippet v
+	${1:String} ${2:var}${3: = null}${4};${5}
+snippet co
+	static public final ${1:String} ${2:var} = ${3};${4}
+snippet cos
+	static public final String ${1:var} = "${2}";${3}
+snippet as
+	assert ${1:test} : "${2:Failure message}";${3}
+
+
+
+snippet cbr
+	BufferedReader ${1:br}${2}
+snippet ncbr
+	new BufferedReader(${1})
+snippet cpw
+	PrintWriter ${1:pw}${2}
+snippet ncpw
+	new PrintWriter(${1})
+snippet cisr
+	InputStreamReader ${1:isr}${2}
+snippet ncisr
+	new InputStreamReader(${1})
+snippet cosw
+	OutputStreamWriterscan ${1:osw}${2}
+snippet ncosw
+	new OutputStreamWriter(${1})

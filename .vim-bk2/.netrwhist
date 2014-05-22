@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/kevin/.vim/plugin'
+let g:netrw_dirhist_2='/home/kevin'
+let g:netrw_dirhist_3='/var/www/lms/website/classes/login_classes'
+let g:netrw_dirhist_4='/home/kevin/.vim/snippets'
+let g:netrw_dirhist_5='/etc/apache2/sites-available'
