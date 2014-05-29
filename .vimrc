@@ -3,7 +3,7 @@ set backspace=indent,eol,start
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" set smartindent
+set smartindent
 set history=50
 set ruler
 set showcmd
