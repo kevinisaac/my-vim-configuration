@@ -77,6 +77,7 @@ let g:NERDTreeWinPos = "right"
 
 " Editor ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 set tw=0
+set clipboard=unnamed
 
 " Session in vim -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " Save session on quitting Vim
@@ -104,3 +105,14 @@ noremap ;9  9<c-w><c-w>
 " set backupdir=./.backup/
 
 execute pathogen#infect()
+
+" Set filetype tab spaces
+autocmd Filetype html,css,xml :setlocal sw=2 ts=2 sts=2
+au BufNewFile,BufRead *.jade set filetype=html
+autocmd BufRead,BufNewFile *.jade setlocal ft=jade
+
+" Vim indent guides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
+autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
