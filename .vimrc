@@ -36,7 +36,7 @@ syntax enable
 " syntax off - disable syntax highlighting permanently
 colorscheme vitamins
 set cursorline
-hi CursorLine cterm=bold ctermbg=237
+hi CursorLine cterm=bold ctermbg=234
 
 
 
@@ -113,6 +113,6 @@ autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 
 " Vim indent guides
 let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=234
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=234
 autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
