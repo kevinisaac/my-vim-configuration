@@ -116,3 +116,21 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=234
 autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
+
+
+" Python folding
+set foldmethod=indent
+set foldnestmax=2
+noremap <space> za
+noremap <NUL> zR
+
+" File manipulation
+noremap tt  :tab split<CR>
+map ;; :vertical wincmd f<CR>
+
+" Emmet mapping
+imap <c-]> <c-y>,
+
+" Vim vertical line at 80
+set colorcolumn=80
+highlight ColorColumn ctermbg=234 guibg=234
